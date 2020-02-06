@@ -36,8 +36,6 @@ then
    saveTrimmed=$trimReads
 fi
 
-##clean workdir
-
 ################################## Don't Change anything down unless it is required #######################
 
 ulimit -c unlimited
