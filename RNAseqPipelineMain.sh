@@ -167,19 +167,14 @@ fi
 rm -r $outDir/RNAseq_timeline.html.*
 rm -r $outDir/RNAseq_trace.txt.*
 
-#st1=$(tail -1 $NXF_HOME/.nextflow.log|grep -cim1 'Execution complete')
-
-#if [ $st1 -eq 1 ]
-#then
-#	if [ -d "$outDir/multiQC" ]; then
-#		rm -r $outDir/multiQC
-#		mkdir $outDir/multiQC
-#	fi
-#	cd $outDir
-#	multiqc $outDir -f --filename "multiqc_report" -o "$outDir/multiQC" -c "$NXF_HOME/conf/" --cl_config "multiqc_config.yaml"
-#	$NXF_HOME/bin/markdown_to_html.r "$NXF_HOME/docs/output.md" "$outDir/Documentation/results_description.html" $R_LIBS_USER
-
+#if [ -d "$outDir/multiQC" ]; then
+#	rm -r $outDir/multiQC
+#	mkdir $outDir/multiQC
 #fi
+#cd $outDir
+#multiqc $outDir -f --filename "multiqc_report" -o "$outDir/multiQC" -c "$NXF_HOME/conf/" --cl_config "multiqc_config.yaml"
+#$NXF_HOME/bin/markdown_to_html.r "$NXF_HOME/docs/output.md" "$outDir/Documentation/results_description.html" $R_LIBS_USER
+
 
 
 
